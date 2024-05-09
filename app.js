@@ -5,7 +5,7 @@ const threshold = 0.9; // Confidence threshold for predictions
 // Load the TensorFlow.js toxicity model
 async function loadModel() {
     model = await toxicity.load(threshold);
-    console.log('Toxicity model loaded.');
+    document.getElementById('modelStatus').innerText = 'The model is built and ready.';
 }
 
 // Call loadModel as soon as the script loads
