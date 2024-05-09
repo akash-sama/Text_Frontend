@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Moderation Tool</title>
+    <!-- Include TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+    <script>
+        let model;
+async function loadModel() {
+    model = await tf.loadLayersModel('model_architecture.json');
+    console.log('Model loaded.');
+}
+loadModel();
+
+
+    </script>
+</body>
+</html>
